@@ -8,20 +8,12 @@ public class monty {
 		
 		System.out.println("달을 입력하세요."); // 입력 : 달을 입력하세요.
 		Scanner sc = new Scanner(System.in);
+		Calendar cal = new Calendar();
 		int m = sc.nextInt();
 		
-		int[] maxDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-		int days = maxDays[m-1];
-		
-		System.out.printf("%d월은 %d일까지 있습니다.\n",m,days);
+		System.out.printf("%d월은 %d일까지 있습니다.\n",m,cal.getmaxDaysOfMonth(m));
+		cal.printSampleCalendar();
 		sc.close();
-	
-//		if( m ) {
-//			System.out.println("%d월은 31일까지 있습니다.")
-//		}
-		
-		
-		
 
 	}
 

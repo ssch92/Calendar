@@ -2,7 +2,12 @@ package hoon.calendar;
 
 public class Calendar {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
+		
+	}
+
+	public void printSampleCalendar() {
+
 		System.out.println("일  월  화 수  목 금  토");
 		System.out.println("--------------------");
 		System.out.println(" 1  2  3  4  5  6  7");
@@ -11,5 +16,11 @@ public class Calendar {
 		System.out.println("22 23 24 25 26 27 28");
 
 	}
-
+	
+	private final int[] MAX_DAYS = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	
+	public int getmaxDaysOfMonth(int m) {
+		return MAX_DAYS[m - 1];
+	}
 }
+
