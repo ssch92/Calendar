@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class sum {
 
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("두 수를 입력하세요.");
 		String inputValue = sc.nextLine();	
@@ -19,6 +18,7 @@ public class sum {
 		System.out.printf("%d와 %d의 합은 %d입니다.",a,b, a+b);
 		
 		sc.close();
+	
 
 	}
 
