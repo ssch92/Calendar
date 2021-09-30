@@ -8,6 +8,8 @@ public class monty2 {
 
 		Scanner sc = new Scanner(System.in);
 		Calendar cal = new Calendar();
+		
+		System.out.println("반복횟수를 입력하세요.");
 		int rep = sc.nextInt();
 
 		for (int i = 0; i < rep; i++) {
@@ -17,7 +19,8 @@ public class monty2 {
 			System.out.printf("%d월은 %d일까지 있습니다.\n", m, cal.getmaxDaysOfMonth(m));
 			cal.printSampleCalendar();
 		}
-
+		
+		System.out.println("Bye");
 		sc.close();
 
 	}
